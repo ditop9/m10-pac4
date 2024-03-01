@@ -22,6 +22,3 @@ def mostrar_menu_consulta():
     print("4. Llistar tots els clients")
     print("5. Enrere\n")
     print("Opció:")
-
-
-mostrar_menu_principal()
