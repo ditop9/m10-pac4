@@ -1,3 +1,6 @@
+"""Classe per la creació de nous clients"""
+
+
 class Client:
     def __init__(self, identificador, nom, cognom, telefon, correu, adress, codi_postal, ciutat, provincia, pais):
         self.identificador = identificador
@@ -12,11 +15,11 @@ class Client:
         self.pais = pais
 
     def __str__(self):
-        print(f"Nom i cognoms: {self.nom}" f"{self.cognom}")
-        print(f"Identificador: {self.identificador}")
-        print(f"Telèfon: {self.telefon}")
-        print(f"Correu electrǹic: {self.correu}")
-        print(f"Adreça: {self.adress}")
-        print(f"Ciutat: {self.ciutat}" f"{self.codi_postal}")
-        print(f"Província: {self.provincia}")
-        print(f"País: {self.pais}")
+        return (f"Nom i cognoms: {self.nom} {self.cognom}\n"
+                f"Identificador: {self.identificador}\n"
+                f"Telèfon: {self.telefon}\n"
+                f"Correu electrònic: {self.correu}\n"
+                f"Adreça: {self.adress}\n"
+                f"Ciutat: {self.ciutat} {self.codi_postal}\n"
+                f"Província: {self.provincia}\n"
+                f"País: {self.pais}\n")
